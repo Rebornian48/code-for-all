@@ -1,3 +1,4 @@
-Code For All
+<h2>Repositori Kode yang bisa digunakan publik</h2>
 
-Script yang akan diberikan secara gratis kepada semua member di github
+Kode yang terdapat di sini :
+- appsheet-rest-api : kode yang digunakan untuk membuat REST API dari Google Sheets dengan menggunakan Google Apps Script
