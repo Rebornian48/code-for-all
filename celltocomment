@@ -1,0 +1,13 @@
+Sub ContentToComment()
+Dim Rng As Range
+Dim WorkRng As Range
+On Error Resume Next
+xTitleId = "Cell Content to Comment"
+Set WorkRng = Application.Selection
+Set WorkRng = Application.InputBox("Range", xTitleId, WorkRng.Address, Type:=8)
+For Each Rng In WorkRng
+    Rng.NoteText Text:=Rng.Value
+    Rng.Value = "NA"
+Next
+End Sub
+
