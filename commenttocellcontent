@@ -1,0 +1,24 @@
+Sub CommentToCell()
+
+Dim Rng As Range
+
+Dim WorkRng As Range
+
+On Error Resume Next
+
+xTitleId = "Comment to Cell Content"
+
+Set WorkRng = Application.Selection
+
+Set WorkRng = Application.InputBox("Range", xTitleId, WorkRng.Address, Type:=8)
+
+For Each Rng In WorkRng
+
+    Rng.Value = Rng.CommentThreaded
+    'Rng.Value = Rng.NoteText
+    'Rng.Comment.Delete
+    Rng.CommentThreaded.Delete
+    
+Next
+
+End Sub
